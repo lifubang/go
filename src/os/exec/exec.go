@@ -346,7 +346,7 @@ func lookExtensions(path, dir string) (string, error) {
 
 // Start starts the specified command but does not wait for it to complete.
 //
-// The Wait method will return the exit code and release associated resources
+// The Wait method will set the exit code and release associated resources
 // once the command exits.
 func (c *Cmd) Start() error {
 	if c.lookPathErr != nil {
